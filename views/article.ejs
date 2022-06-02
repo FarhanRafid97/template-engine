@@ -1,0 +1,13 @@
+<div class="container m-4">
+  <!-- Kita lakukan loop untuk menjalankan include untuk component article -->
+
+  <div class="container mb-2">
+    <% articles.map((article)=>{ %>
+    <h1>
+      <%= article.title %>
+      <span class="badge bg-primary"><%= article.id %></span>
+    </h1>
+    <p><%= article.body %></p>
+    <% }) %>
+  </div>
+</div>
